@@ -17,7 +17,7 @@ def hello_world():
     if request_type_str == 'GET':
         path = 'static/base_pic.svg'
         return render_template('index.html', href = path )
-    
+        
     else:
         text = request.form['text']
         random_string = uuid.uuid4().hex
